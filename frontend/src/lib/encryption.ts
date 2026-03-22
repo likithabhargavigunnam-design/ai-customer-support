@@ -1,3 +1,6 @@
+/**
+ * Encryption service for secure data handling in the frontend.
+ */
 export class EncryptionService {
   private static ALGORITHM = 'AES-GCM';
 
