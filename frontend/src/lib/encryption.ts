@@ -21,7 +21,7 @@ export class EncryptionService {
       {
         name: this.ALGORITHM,
         iv: iv,
-      },
+      } as AesGcmParams,
       key,
       data
     );
@@ -34,7 +34,7 @@ export class EncryptionService {
       {
         name: this.ALGORITHM,
         iv: iv,
-      },
+      } as AesGcmParams,
       key,
       ciphertext
     );
