@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Scene3D from "@/components/Scene3D";
 import { ArrowRight, Bot, Shield, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,9 +22,9 @@ export default function Home() {
           <a href="#" className="hover:text-primary transition-colors">Platform</a>
           <a href="#" className="hover:text-primary transition-colors">Solutions</a>
           <a href="#" className="hover:text-primary transition-colors">Pricing</a>
-          <button className="px-5 py-2.5 rounded-full bg-white text-black font-semibold hover:bg-opacity-90 transition-all shadow-xl">
+          <Link href="/login" className="px-5 py-2.5 rounded-full bg-white text-black font-semibold hover:bg-opacity-90 transition-all shadow-xl">
             Get Started
-          </button>
+          </Link>
         </div>
       </nav>
 
@@ -51,10 +52,10 @@ export default function Home() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="group px-8 py-4 rounded-2xl bg-primary text-white font-bold text-lg flex items-center gap-2 hover:scale-105 transition-all shadow-2xl shadow-primary/40">
+            <Link href="/dashboard" className="group px-8 py-4 rounded-2xl bg-primary text-white font-bold text-lg flex items-center gap-2 hover:scale-105 transition-all shadow-2xl shadow-primary/40">
               Start Free Trial
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
             <button className="px-8 py-4 rounded-2xl glass font-bold text-lg hover:bg-white/10 transition-all">
               Watch Demo
             </button>
